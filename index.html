@@ -5,18 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para Manu 💙</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #090909, #66a6ff);
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
     }
+.galeria {
+  display: none;
+  margin-top: 30px;
+  animation: fadeIn 2s ease;
+}
 
+.galeria h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fotos img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: all .4s ease;
+  opacity: 0;
+  animation: surgir 1s forwards;
+}
+
+.fotos img:hover {
+  transform: scale(1.03);
+}
+
+.assinatura {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.4);
+  border-radius: 20px;
+}
     .card {
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
@@ -41,99 +88,127 @@
       white-space: pre-line;
     }
 
-    .btn {
-      display: block;
-      margin: 20px auto 0;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      background: #fff;
-      color: #764ba2;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
+   .btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg,#ffffff,#dbeafe);
+  color: #2a5298;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
     .btn:hover {
       transform: scale(1.05);
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+   @keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
 </head>
 <body>
 
   <div class="card">
-    <h1>💌 Para você, Manu</h1>
+ <h1>Uma pequena surpresa para você ✨</h1>
+
+<p style="text-align:center;">
+Clique abaixo quando estiver pronta para ler.
+</p>
     <p id="mensagem"></p>
     <button class="btn" onclick="mostrarTexto()">Clique para ler 💙</button>
+
+    <div class="galeria" id="galeria">
+  <h2>Alguns momentos especiais que me fazem lembrar de você  💙</h2>
+
+  <div class="fotos">
+  <img src="img/1.jpeg" alt="Foto 1">
+<img src="img/2.jpg" alt="Foto 2">
+<img src="img/3.jpg" alt="Foto 3">
+  </div>
+  <div class="assinatura">
+    💙 Com carinho,<br>
+    Gabriel
+</div>
+</div>
   </div>
 
   <script>
-    const texto = `Boa noite, Manu. Tudo bem?
+    const texto = `Boa noite, Manuelle Meneses. Tudo bem?
 
-Eu pensei muito em como escrever esse texto… de verdade. Porque quando a gente vai falar de alguém que tem tanto carinho e admiração, parece que faltam palavras.
+Manu, esse já é o meu sexto áudio tentando gravar um feliz aniversário para você. Pode parecer algo simples: escrever um texto rápido, falar algumas palavras bonitas e acabou, né? O problema é que, quando se trata de você, nunca é fácil. E não é porque você seja difícil, muito pelo contrário. É porque falar sobre você é algo que se torna extraordinário.
 
-Essa semana não tem sido fácil, né? Eu costumo dizer que sinto quando as pessoas que eu gosto não estão bem… e eu senti isso em você. Você não tem noção do quanto eu orei pela sua vida esses dias, e pedindo pra que você estivesse bem e em paz.
+Falar sobre você é reconhecer que existem pessoas que aparecem do nada na nossa vida e mudam tudo de cabeça para baixo. E não que isso seja algo ruim, não, não. Você foi a pessoa que me fez entender que existe, sim, um bom relacionamento com os pais, mesmo sendo cristão. Você foi a pessoa que me ensinou o verdadeiro significado de paz, harmonia e, com toda certeza, como fazer um ótimo bolo, né?
 
-Eu sei que não tem sido um momento fácil, mas queria que você soubesse que, independente de qualquer coisa, eu tenho muito orgulho de você. De verdade. Você é uma daquelas pessoas que chegaram na minha vida de um jeito inesperado e até mesmo inusitado, mas que mudaram completamente a minha historia. Assim como a Fabi e a Moulin, você tem um lugar muito especial no meu coração.
+Acho que, em todas as minhas vidas, se eu pudesse colocar a Manuelle Meneses nelas, eu faria o impossível para tê-la.
 
-Eu lembro até hoje da primeira vez que você falou comigo, naquela brincadeira sobre eu e a Fabi… pode parecer bobo, mas ficou completamente marcado em minha vida. E desde então, você sempre me apoiou em vários momentos da minha vida e até mesmo um bem recente rs.
+Sei que nossa amizade começou de uma forma engraçada, com toda aquela situação da Fabi, mas eu sou grato todos os dias por isso ter acontecido. Se eu não tivesse conhecido a Fabi, provavelmente não conheceria a verdadeira pessoa que você é!
 
-Se eu fosse definir em palavras o significado de manuelle, provavelmente seria lealdade e bondade.
+Eu sempre vou comemorar todas as suas conquistas, porque elas são minhas também. Você tem um chamado, Manuelle, tão incrível que não tem como descrevê-lo de uma forma simples. No domingo à noite, eu pude presenciar um pouco da Manuelle da intercessão, e você não tem noção da felicidade que eu senti! Fiquei feliz porque vi que alguém com um brilho tão lindo quanto o seu estava servindo e caminhando ao lado de Cristo.
 
-lealdade por sempre ser próximas as suas amigas, ajudá-las no momento mais difíceis mesmo que algumas vezes estivesse bem mal.
+Confesso que, no começo, tive medo de falar com você. Tive medo de você achar que eu não seria alguém tão legal para conversar. Mas acho que esse não é o principal assunto de hoje, né?
 
-E a bondade provavelmente seria por que todas as vezes q eu olho pra vc só consigo pensar no quanto as meninas tem sorte por ter você na vida delas, você com toda a certeza é uma das pessoas mais bondosas que eu pude conhecer,eu acredito que você sofreu vários bocados na sua vida mas eu gostaria que você soubesse que eu tenho muito orgulho de você minha amiga!
+Hoje é o seu aniversário, então aqui vai o que realmente importa:
 
-Sendo bem sincero, toda vez que eu olho pra você, eu vejo algo diferente… eu vejo uma presença de Cristo. Vejo alguém cheio do Espírito Santo, com uma presença que não dá nem pra explicar direito. É o tipo de pessoa que dá vontade de sentar, conversar sobre Cristo e ficar conversando sobre coisas aleatórias por horas.
+Manuelle, eu sou muito grato por quem você é. Você é uma filha dedicada, uma amiga presente, uma tia sensacional e uma pessoa com um chamado tão bonito que é impossível descrevê-lo em palavras, em um áudio ou em qualquer outra coisa do gênero.
 
-Eu não sou muito bom com palavras, mas quando a gente tem tanta afeição por alguém, a gente tenta se expressar da melhor forma possível. E eu nunca tive muita coragem de te falar tudo isso antes, mas eu tenho carinho e admiração pela pessoa que você é.
+Você tem um brilho que vem do Espírito Santo. Tem um olhar que transmite paz e parece dizer: "Deus, eu estou aqui."
 
-Quero que você saiba que pode contar comigo pra qualquer coisa. Qualquer coisa mesmo. Se precisar me ligar 4h ou 5h da manhã, eu vou estar aqui e vou atender o telefone sem pensar duas vezes, até porque amigos servem pra isso, não é mesmo?
+E eu acredito que todo mundo merece ter uma Manuelle Meneses na vida. Porque você é porto seguro para muita gente. É porto seguro para a Fabi, para a Maria e para a Giovanna e, de certa forma, também para mim.
 
-Por favor, eu não sei o que tem acontecido na sua vida, mas melhore… porque você é uma das pessoas mais contagiantes e alegres que eu conheço, com um dos sorrisos mais bonitos que eu já vi. Seria muito triste ver alguém tão especial perder esse brilho.
+Eu agradeço todos os dias pelo carinho que você tem com a minha prima. A Daniela é a coisa mais próxima que eu tenho de uma irmã, e saber que posso confiar em outra pessoa para cuidar dela e aconselhá-la é muito gratificante.
 
-Eu me importo muito com você. E, se for preciso, eu faria o impossível pra te ver bem.
+Sei que, às vezes, eu tenho meus surtos, se assim posso dizer, né? Mas sei que, mesmo que eu tenha um dia difícil e queira desistir de tudo, vai ter você na outra ponta para me segurar.
 
-Então guarda tudo isso com carinho, tá?
+Admito que sou péssimo com datas. Na verdade, fiquei com tanto medo de esquecer seu aniversário que coloquei um lembrete no meu celular, no meu computador e no meu tablet.
 
-Eu fiquei muito feliz de ter te tirado no amigo oculto. De verdade. Eu tinha orado tanto por você… e parece que Deus me deu uma resposta através disso.
+E eu te faço uma promessa, Manuelle: sempre que o seu mundo parecer desabar, eu vou ser o primeiro a tentar levantá-lo com você.
 
-Obrigado por existir, por fazer parte da minha vida e por ser exatamente quem você é.
+Continue tendo esse brilho que você tem. Continue sendo linda, assim como o Espírito Santo reflete em você.
 
-E espero que você goste do chocolate. Ele não foi só uma forma de tentar arrancar um sorriso seu… foi uma forma de gratidão por tudo que você já fez por mim.
+Obrigado por ser exatamente quem você é.
 
-E eu tenho quase certeza que agora você tá com aquele sorrisinho de “Droga, o Gabriel me fez chorar” 😂 mas saiba que eu faria todas as palhaçadas do mundo pra te ver bem, minha amiga!
+Que Deus continue te usando de maneira poderosa, que nunca faltem motivos para sorrir, que seu chamado floresça cada vez mais e que você nunca esqueça o quanto é amada pelas pessoas que têm você ao redor. E eu fico muito feliz por ter o privilégio de caminhar ao seu lado.
 
-Enfim… o que eu queria te dizer com tudo isso é: mantenha seu sorriso, Manuelle. Pessoas com uma alma bondosa como a sua são únicas.
+Feliz aniversário, Manuelle Meneses. Que o Senhor continue te usando como ferramenta d'Ele!
 
-Quando se sentir triste, é só me mandar uma mensagem. Eu sempre vou estar aqui disponível para você!
+(E precisamos marcar de ir naquele parque de cama elástica, né?)
 
-simplesmente seja você manuelle, todos precisam de uma manuelle em nossas vidas! 
+Com carinho,
+Gabriel`;
+function mostrarTexto() {
+  const btn = document.querySelector(".btn");
+  const galeria = document.getElementById("galeria");
+  const msg = document.getElementById("mensagem");
 
-Com carinho,  
-Gabriel 💙`;
+  btn.style.display = "none";
 
-    function mostrarTexto() {
-      let i = 0;
-      const speed = 20; // mais rápido por ser texto grande
-      const msg = document.getElementById("mensagem");
-      msg.innerHTML = "";
+  let i = 0;
+  const speed = 18;
 
-      function typeWriter() {
-        if (i < texto.length) {
-          msg.innerHTML += texto.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-
-      typeWriter();
+  function typeWriter() {
+    if (i < texto.length) {
+      msg.innerHTML += texto.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    } else {
+      galeria.style.display = "block";
     }
+  }
+
+  typeWriter();
+}
   </script>
 
 </body>
